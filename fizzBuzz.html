@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+    hello
+
+  <script>
+    // Your JavaScript goes here!
+ 
+    // When a user inputs a number 
+    // Loop from 1 to the number 
+    // if the current number is divisble by 3 print fizz; else if 5 print buzz, else if 3 and 5 print fizzbuzz; else print the current number 
+
+    console.log("working...")
+
+    let answer = parseInt(prompt("Please provide the number you would like to FizzBuzz up to"))
+
+    console.log(`You selected: ${answer}`)
+    console.log(loop(answer));
+
+    function loop(answer) {
+       for (let i = 1; i<= answer; i++) {
+        console.log(isFizzBuzz(i));
+       }
+    }
+
+    function isFizzBuzz (count) {
+      if (count % 3 === 0 && count % 5 === 0) {
+        return "fizzBuzz"
+      } else  if (count % 3 === 0) {
+        return "fizz"
+      } else if (count % 5 === 0) {
+        return "buzz"
+      } else {
+        return count
+      }
+    }
+
+ 
+  </script>
+
+</body>
+</html>
+
+
+
+
